@@ -15,5 +15,4 @@ Desafio lançado pela **q9 Tecnologia** para entrar no processo de seleção:
 
 ## Desenvolvido por
 
-> Antonio Joaquim Fernandes
-e-mail: imbitubadigital@gmail.com
+> Antonio Joaquim Fernandes | e-mail: imbitubadigital@gmail.com

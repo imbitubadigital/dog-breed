@@ -7,6 +7,7 @@ import NavigationService from '~/services/navigation';
 
 import Register from '~/pages/Register';
 import List from '~/pages/List';
+import About from '~/pages/About';
 
 import Menu from '~/components/Menu';
 
@@ -15,7 +16,6 @@ const Drawer = createDrawerNavigator();
 
 export default function Routes() {
   const signed = useSelector(state => state.auth.signed);
-  // const signed = false;
 
   function registerService(ref) {
     NavigationService.setTopLevelNavigation(ref);
@@ -38,6 +38,7 @@ export default function Routes() {
           drawerContent={props => <Menu {...props} />}
         >
           <Drawer.Screen name="List" component={List} />
+          <Drawer.Screen name="About" component={About} />
         </Drawer.Navigator>
       )}
     </NavigationContainer>

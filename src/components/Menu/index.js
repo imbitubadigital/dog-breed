@@ -18,6 +18,7 @@ export default function Menu({ navigation }) {
   function setBreed(type) {
     dispatch(listRequest(type));
     navigation.closeDrawer();
+    navigation.navigate('List');
   }
 
   return (
@@ -64,7 +65,7 @@ export default function Menu({ navigation }) {
               <Txt>Raça Labrador</Txt>
             </Item>
             <Divider style={{ backgroundColor: 'rgba(255,255,255,0.5)' }} />
-            <Item onPress={() => navigation.navigate('Performance')}>
+            <Item onPress={() => navigation.navigate('About')}>
               <Icon
                 name="information-outline"
                 type="material-community"

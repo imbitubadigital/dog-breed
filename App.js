@@ -5,11 +5,14 @@ import { StatusBar, YellowBox } from 'react-native';
 import { Toast } from 'react-native-redux-toast';
 import { store, persistor } from '~/store';
 import Routes from '~/routes';
+
 export default function App() {
- /*  YellowBox.ignoreWarnings([
+  YellowBox.ignoreWarnings([
     'Warning: componentWillReceiveProps is deprecated',
+    'Warning: componentWillReceiveProps has been',
     'Warning: componentWillMount is deprecated',
-  ]); */
+    'Warning: componentWillMount has been',
+  ]);
 
   return (
     <Provider store={store}>

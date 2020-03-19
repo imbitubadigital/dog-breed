@@ -26,3 +26,14 @@ export const Txt = styled.Text`
   font-size: 16px;
   margin-top: 5px;
 `;
+
+export const BtnFooter = styled.TouchableOpacity`
+  padding: 5px 20px;
+  background: #666;
+  border-radius: 5px;
+`;
+
+export const TxtBtn = styled.Text`
+  color: #fff;
+  font-size: 14px;
+`;
